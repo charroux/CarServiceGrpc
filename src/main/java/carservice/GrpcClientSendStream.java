@@ -10,22 +10,12 @@ import io.grpc.stub.StreamObserver;
 
 import java.util.Iterator;
 
-public class GrpcClientReturnStream {
+public class GrpcClientSendStream {
 
     public static void main(String[] args) {
         ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 8080)
                 .usePlaintext()
                 .build();
-
-        CarRentalServiceGrpc.CarRentalServiceBlockingStub stub = CarRentalServiceGrpc.newBlockingStub(channel);
-
-        Iterator<Car> cars = stub.getCars(GetCarsRequest.newBuilder().build());
-        while(cars.hasNext()){
-            Car car = cars.next();
-            System.out.println(car);
-        }
-
-        channel.shutdown();
 
         channel = ManagedChannelBuilder.forAddress("localhost", 8080)
                 .usePlaintext()
