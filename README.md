@@ -1,15 +1,31 @@
 # gRPC
 
-## Service definition in Proto Buffers
+## Service definition in Proto Buffers language
 
+https://github.com/charroux/CarServiceGrpc/blob/main/src/main/proto/carservice.proto
 
-Write or update a proro file
+## Server side implementation
 
-Then generate de Java code with gradlew build
+https://github.com/charroux/CarServiceGrpc/blob/main/src/main/java/carservice/CarRentalServiceImpl.java
 
-Launch the server: https://github.com/charroux/gRPC/blob/main/src/main/java/org/example/Main.java
+## Bukld and run
 
-Launch the client: https://github.com/charroux/gRPC/blob/main/src/main/java/org/example/GrpcClient.java
+Open the project in Intellij or import this project as a Gradle project in Eclipse.
 
+Build the project within Eclipse or Intellij.
 
+Look at the generated code in the build folder.
 
+Launch the main at the server side: https://github.com/charroux/CarServiceGrpc/blob/main/src/main/java/carservice/GrpcServer.java
+
+## Make a single request from the client, response as a stream (sequence of messages))
+
+https://github.com/charroux/CarServiceGrpc/blob/main/src/main/java/carservice/GrpcClientReturnStream.java
+
+## The client sends a sequence of messages then waits for an asynchronous response
+
+https://github.com/charroux/CarServiceGrpc/blob/main/src/main/java/carservice/GrpcClientSendStream.java
+
+## The client receive a dynamic response each time the server receives a request
+
+https://github.com/charroux/CarServiceGrpc/blob/main/src/main/java/carservice/GrpcClientSendStreamReturnStream.java
