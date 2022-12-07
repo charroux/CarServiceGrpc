@@ -16,7 +16,7 @@ Build the project within Eclipse or Intellij.
 
 Look at the generated code in the build folder.
 
-Launch the main at the server side: https://github.com/charroux/CarServiceGrpc/blob/main/src/main/java/carservice/GrpcServer.java
+Launch the main program at the server side: https://github.com/charroux/CarServiceGrpc/blob/main/src/main/java/carservice/GrpcServer.java
 
 ## Make a single request from the client, response as a stream (sequence of messages))
 
