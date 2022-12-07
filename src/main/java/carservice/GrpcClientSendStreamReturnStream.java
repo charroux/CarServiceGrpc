@@ -4,13 +4,10 @@ import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.carservice.Car;
 import io.grpc.carservice.CarRentalServiceGrpc;
-import io.grpc.carservice.GetCarsRequest;
 import io.grpc.carservice.Invoice;
 import io.grpc.stub.StreamObserver;
 
-import java.util.Iterator;
-
-public class GrpcClientSendStream {
+public class GrpcClientSendStreamReturnStream {
 
     public static void main(String[] args) {
         ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 8080)
@@ -29,13 +26,12 @@ public class GrpcClientSendStream {
             public void onError(Throwable t) {
 
             }
-
             @Override
             public void onCompleted() {
             }
         };
 
-        StreamObserver<Car> carsObserver = nonBlockingStub.rentCars(invoiceObserver);
+        StreamObserver<Car> carsObserver = nonBlockingStub.bookingCars(invoiceObserver);
 
         Car ferrari = Car.newBuilder().setPlateNumber("11AA22").setPrice(100).setBrand("Ferrari").build();
         carsObserver.onNext(ferrari);

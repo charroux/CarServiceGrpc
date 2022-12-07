@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34294e81-7967-40bb-a424-4470b25ac0c9" name="Changes" comment="" />
+    <list default="true" id="34294e81-7967-40bb-a424-4470b25ac0c9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/carservice/GrpcClientSendStreamReturnStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/carservice/GrpcClientTimeOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/CarRentalServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/CarRentalServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/GrpcClientSendStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/GrpcClientSendStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/proto/carservice.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/carservice.proto" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,11 +28,107 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2IY0GWyGupfD6SPrxoxIPd1dh51" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "/Users/benoitcharroux/Documents/CarService/src/main/java",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/src/main/proto" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="carservice" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.GrpcClientSendStreamReturnStream (1)">
+    <configuration name="GrpcClientReturnStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="carservice.GrpcClientReturnStream" />
+      <module name="CarService.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="carservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GrpcClientSendStream (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="carservice.GrpcClientSendStream" />
+      <module name="CarService.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="carservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GrpcClientSendStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="carservice.GrpcClientSendStream" />
+      <module name="CarService.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="carservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GrpcClientSendStreamReturnStream (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="carservice.GrpcClientSendStreamReturnStream" />
+      <module name="CarService.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="carservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GrpcClientSendStreamReturnStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="carservice.GrpcClientSendStreamReturnStream" />
+      <module name="CarService.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="carservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GrpcClientSendStreamReturnStream (1)" />
+        <item itemvalue="Application.GrpcClientSendStreamReturnStream" />
+        <item itemvalue="Application.GrpcClientSendStream (1)" />
+        <item itemvalue="Application.GrpcClientSendStream" />
+        <item itemvalue="Application.GrpcClientReturnStream" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

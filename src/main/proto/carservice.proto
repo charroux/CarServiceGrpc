@@ -10,9 +10,15 @@ import "google/protobuf/empty.proto";
 package carservice;
 
 service CarRentalService {
+
   rpc GetCars (GetCarsRequest) returns (stream Car) {}
 
-  rpc RentCars (stream Car) returns (stream Invoice) {}
+  rpc RentCars(stream Car) returns (Invoice) {}
+
+  rpc BookingCars(stream Car) returns (stream Invoice) {}
+
+  rpc WaitForACar(GetCarsRequest) returns (Car) {}
+
 }
 
 message Car {

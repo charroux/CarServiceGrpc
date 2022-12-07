@@ -5,12 +5,11 @@ import io.grpc.ManagedChannelBuilder;
 import io.grpc.carservice.Car;
 import io.grpc.carservice.CarRentalServiceGrpc;
 import io.grpc.carservice.GetCarsRequest;
-import io.grpc.carservice.Invoice;
-import io.grpc.stub.StreamObserver;
 
 import java.util.Iterator;
+import java.util.concurrent.TimeUnit;
 
-public class GrpcClientReturnStream {
+public class GrpcClientTimeOut {
 
     public static void main(String[] args) {
         ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 8080)
@@ -19,12 +18,12 @@ public class GrpcClientReturnStream {
 
         CarRentalServiceGrpc.CarRentalServiceBlockingStub stub = CarRentalServiceGrpc.newBlockingStub(channel);
 
-        Iterator<Car> cars = stub.getCars(GetCarsRequest.newBuilder().build());
-        while(cars.hasNext()){
-            Car car = cars.next();
-            System.out.println(car);
+        try{
+            Car car = stub.withDeadlineAfter(10000, TimeUnit.MILLISECONDS).waitForACar(GetCarsRequest.newBuilder().build());
+        } catch(Exception e){
+            System.out.println(("Time out occured"));
         }
-
+        
         channel.shutdown();
     }
 }

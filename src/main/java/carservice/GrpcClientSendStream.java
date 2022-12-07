@@ -17,10 +17,6 @@ public class GrpcClientSendStream {
                 .usePlaintext()
                 .build();
 
-        channel = ManagedChannelBuilder.forAddress("localhost", 8080)
-                .usePlaintext()
-                .build();
-
         CarRentalServiceGrpc.CarRentalServiceStub nonBlockingStub = CarRentalServiceGrpc.newStub(channel);
 
         StreamObserver<Invoice> invoiceObserver = new StreamObserver<Invoice>() {
